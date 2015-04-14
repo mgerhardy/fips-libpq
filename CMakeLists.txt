@@ -57,7 +57,7 @@ fips_begin_lib(pq)
 	set(FLEXIBLE_ARRAY_MEMBER 1)
 
 	check_struct_has_member("struct tm" "tm_zone" "sys/types.h" HAVE_TM_ZONE)
-	check_struct_has_member("struct sockaddr_storage
+#	check_struct_has_member("struct sockaddr_storage
 
 	file(WRITE ${FIPS_LIBPQ_ROOT_DIR}/postgresql/src/include/port/pg_config_paths.h "
 #define PGBINDIR \"$(bindir)\"
