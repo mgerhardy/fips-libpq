@@ -1,0 +1,10 @@
+#
+# fips-libpq
+#
+---
+exports:
+    header-dirs:
+        - postgresql/src/include/libpq
+        - postgresql/src/include
+    modules :
+        pq: .
